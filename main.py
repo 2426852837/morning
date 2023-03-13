@@ -92,7 +92,7 @@ client = WeChatClient(app_id, app_secret)
 
 wm = WeChatMessage(client)
 wea, temperature, wind, wind_power = get_weather()
-pig_wea, pig_temperature, pig_wind, pig_wind_power = get_weather()
+pig_wea, pig_temperature, pig_wind, pig_wind_power = get_pig_weather()
 data = {"city": {"value": city_name, "color": get_random_color()},
         "weather": {"value": wea, "color": get_random_color()},
         "temperature": {"value": temperature, "color": get_random_color()},
